@@ -1,25 +1,28 @@
-DROP DATABASE IF EXISTS task_saver_db;
+DROP DATABASE IF EXISTS somehting here;
 
-CREATE DATABASE task_saver_db;
+CREATE DATABASE something here;
 
-USE task_saver_db;
+USE something here;
+
+
+CREATE TABLE department (
+  head varchar(30), 
+  PRIMARY KEY (id),
+);
+
+CREATE TABLE  the_role (
+     PRIMARY KEY (id)
+    title varchar(30) NOT NULL,
+    id int NOT NULL AUTO_INCREMENT,
+    department_id int NOT NULL AUTO_INCREMENT,
+   
+);
 
 CREATE TABLE employee (
+    PRIMARY KEY (id)
     first_name varchar(30) NOT NULL,
     last_name varchar(30) NOT NULL,
     role_id int NOT NULL AUTO_INCREMENT,
     manager_id int NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (id)
 );
 
-CREATE TABLE  the_role (
-    title varchar(30) NOT NULL,
-    id int NOT NULL AUTO_INCREMENT,
-    department_id int NOT NULL AUTO_INCREMENT,
-    PRIMARY KEY (id)
-);
-
-CREATE TABLE department (
-  head varchar(30), 
-  PRIMARY KEY (id)
-);

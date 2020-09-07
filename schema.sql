@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS somehting here;
+DROP DATABASE IF EXISTS employee;
 
-CREATE DATABASE something here;
+CREATE DATABASE employee;
 
-USE something here;
+USE employee;
 
 
 CREATE TABLE department (
